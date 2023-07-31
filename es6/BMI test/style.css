@@ -1,0 +1,68 @@
+
+body{
+    text-align: center;
+    
+}
+input,button{
+    margin: 10px;
+    padding: 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+input{
+    height: 30px;
+}
+input[type=number],input[type=text]{
+    text-align: center;
+}
+button{
+    height: 30px;
+    width: 150px
+}
+#submit:hover{
+    background-color: blue;
+}
+#reset:hover{
+    background-color: red;
+}
+form{
+    padding: 30px;
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 0px 20px 30px 10px gray;
+}
+form p{
+    color: red;
+}
+#result-div{
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#result{
+    display: none;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+    background-color: black;
+    height: auto;
+    width: 300px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+div p{
+    font-size: larger;
+}

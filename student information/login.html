@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="flip-card-inner" id="flip-card-inner">
+            <div class="container1">
+                <h1>Login form</h1>
+                <form method="get" class="login-form">
+                    <input type="text" name="username" class="username" id="loginUsername" placeholder="Enter your username" required><br><br>
+                    <input type="password" name="password" class="password" id="LoginPassword" placeholder="Enter your password" required><br><br>
+                    <button type="submit" class="login" id="login">Login</button><br><br>
+                </form>
+                <button class="reg" onclick="reg()">Registration</button>
+            </div>
+            <div class="container2">
+                <h2>Registration Form</h2>
+                <form>
+                  <input type="text" id="username"  name="username" placeholder="Username" required><br><br>
+                  <input type="email" id="email"  name="email" placeholder="Email" required><br><br>
+                  <input type="tel" id="phone"  name="phone" placeholder="Phone" required><br><br>
+                  <input type="password" id="password"  name="password" placeholder="Password" required><br><br>
+                  <button type="submit" class="reg" id="reg" >Register</button>
+                </form><br>
+                <button id="back" onclick="back()">Back</button>
+              </div>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+</body>
+</html>

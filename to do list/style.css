@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+#input-text{
+    border-radius: 10px;
+    height: 20px;
+    width: 80px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+input[type="text"]{
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+#add-item{
+    color: gold;
+    background-color: blue;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#main{
+    padding: 5px;
+}
+#items{
+    background-color: blue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+

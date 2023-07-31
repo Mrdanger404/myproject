@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="form">
+        <form>
+            <label for="name">Enter your name</label><br>
+            <input type="text" name="name" id="name"><br>
+
+            <label for="email">Enter your email</label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="class">Choose your class</label><br>
+            <select name="class" id="class">
+                <option value="1"> one </option>
+                <option value="2"> two </option>
+                <option value="3"> three </option>
+                <option value="4"> four </option>
+                <option value="5"> five </option>
+                <option value="6"> six </option>
+                <option value="7"> seven </option>
+                <option value="8"> eight </option>
+                <option value="9"> nine </option>
+                <option value="10"> ten </option>
+            </select><br><br>
+
+            <label for="gpa">Choose your CGPA </label><br>
+            <select name="gpa" id="gpa">
+                <option value="5.00"> A+ </option>
+                <option value="4.00"> A </option>
+                <option value="3.67"> A- </option>
+                <option value="3.33"> B+ </option>
+                <option value="3.00"> B </option>
+                <option value="2.67"> B- </option>
+                <option value="2.33"> C+ </option>
+                <option value="2.00"> C </option>
+                <option value="1.00"> D </option>
+                <option value="0.00"> F </option>
+            </select><br><br>
+
+            <button id="submit">Submit</button>
+
+        </form>
+
+        <table border="1">
+            <tr>
+                <th> Name </th>
+                <th> Email </th>
+                <th> Class </th>
+                <th> CGPA </th>
+            </tr>
+            <tbody id="info">
+
+            </tbody>
+        
+        </table>
+    </div>
+
+    <div class="filter">
+        <form>
+            <label for="c-class">Choose your class</label><br>
+            <select name="c-class" id="c-class">
+                <option value="1"> one </option>
+                <option value="2"> two </option>
+                <option value="3"> three </option>
+                <option value="4"> four </option>
+                <option value="5"> five </option>
+                <option value="6"> six </option>
+                <option value="7"> seven </option>
+                <option value="8"> eight </option>
+                <option value="9"> nine </option>
+                <option value="10"> ten </option>
+            </select><br><br>
+
+            <label for="c-gpa">Choose your CGPA </label><br>
+            <select name="c-gpa" id="c-gpa">
+                <option value="5.00"> A+ </option>
+                <option value="4.00"> A </option>
+                <option value="3.67"> A- </option>
+                <option value="3.33"> B+ </option>
+                <option value="3.00"> B </option>
+                <option value="2.67"> B- </option>
+                <option value="2.33"> C+ </option>
+                <option value="2.00"> C </option>
+                <option value="1.00"> D </option>
+                <option value="0.00"> F </option>
+            </select><br><br>
+
+            <button id="c-submit">Submit</button>
+
+        </form>
+        <table border="1">
+            <tr>
+                <th> Name </th>
+                <th> Email </th>
+                <th> Class </th>
+                <th> CGPA </th>
+            </tr>
+            <tbody id="c-info">
+
+            </tbody>
+        
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

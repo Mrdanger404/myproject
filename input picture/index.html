@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student information</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Student information</h1>
+    <form method="post" id="student-info">
+        <label for="class">Class</label><br>
+        <select name="class" id="stclass">
+            <option value="Six">Six</option>
+            <option value="Seven">Seven</option>
+            <option value="Eight">Eight</option>
+            <option value="Nine">Nine</option>
+            <option value="Ten">Ten</option>
+        </select><br>
+        <label for="name">Enter Student name :</label><br>
+        <input type="text" name="name" id="stname" required><br>
+        <label for="roll">Student roll :</label><br>
+        <input type="number" name="roll" id="stroll" required><br>
+        <label for="guardian">Guardian name :</label><br>
+        <input type="text" name="guardian" id="guname" required><br>
+        <label for="gunumber">Guardian number :</label><br>
+        <input type="tel" name="gunumber" id="gunumber" required><br>
+        <label for="photo">Upload student picture </label><br>
+        <input type="file" name="photo" id="photo" accept="image/*" required><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear All</button>
+    </form>
+    </div>
+
+    <div id="student-list">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>class</th>
+                    <th>Roll</th>
+                    <th>Student Name</th>
+                    <th>Guardian name</th>
+                    <th>Guardian number</th>
+                    <th>Student Picture</th>
+                </tr>
+            </thead>
+            <tbody id="students">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

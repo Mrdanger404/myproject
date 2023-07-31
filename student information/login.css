@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #f0f2f0, #000c40);
+}
+.card {
+    perspective: 1000px;
+    height: 200px;
+    width: 300px;
+    position: relative;
+    margin: auto;
+}
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform;
+    -webkit-transition: transform 0.6s;
+    -moz-transition: transform o.6s;
+    -ms-transition: transform 0.6s;
+    -o-transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.container1,.container2{
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1,2,3,4.5);
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    -webkit-transform: translateY(-50);
+    -moz-transform: translateY(-50);
+    -ms-transform: translateY(-50);
+    -o-transform: translateY(-50);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.container2{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+input[type=text],input[type=password],input[type=email],input[type=tel]{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1em;
+}
+input[type=text]:focus,input[type=password]:focus,input[type=email],input[type=tel]{
+    border-color: #000c40;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0,12,64,0.5);
+}
+#login{
+    background-color: gray;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#login:hover{
+    background-color: blue;
+}
+#login:focus{
+    border: 2px solid black;
+}
+.reg{
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: red;
+}
+.reg:hover{
+    transition: 200ms;
+    background-color: blue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+}
+.flipped{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.flipBack{
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}

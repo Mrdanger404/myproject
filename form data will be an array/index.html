@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+// declare an array variable to store the form data
+var formData = [];
+
+// define a function to create a new object from the form inputs
+function createObject() {
+  // get the values of the form inputs
+  var name = document.getElementById("name").value;
+  var age = document.getElementById("age").value;
+  var email = document.getElementById("email").value;
+
+  // create a new object with the input values as properties
+  var obj = {
+    name: name,
+    age: age,
+    email: email
+  };
+
+  // push the new object to the array
+  formData.push(obj);
+
+  // display the array in the console for testing
+  console.log(formData);
+}
+
+</script>
+</head>
+<body>
+<h1>Form Data Example</h1>
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br>
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age"><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br>
+  <input type="button" value="Submit" onclick="createObject()">
+</form>
+</body>
+</html>

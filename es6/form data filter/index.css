@@ -1,0 +1,31 @@
+
+input{
+    margin: 10px;
+}
+label{
+    margin: 10px;
+}
+.form{
+    width: 48%;
+    float: left;
+    text-align: center;
+}
+.filter{
+    width: 48%;
+    float: right;
+    text-align: center;
+}
+
+select{
+    margin: 10px;
+}
+
+table{
+    text-align: center;
+    margin: 20px;
+    width: 48%;
+}
+
+button{
+    margin: 10px;
+}
